@@ -867,10 +867,10 @@ def _persist_lesson_to_remote() -> str:
         if token:
             targets.append(
                 "https://x-access-token:{token}@gh-proxy.test.osinfra.cn/"
-                "https://github.com/triton-ascend/triton-report.git".format(token=token))
+                "https://github.com/cosdt/triton-report.git".format(token=token))
             targets.append(
                 "https://x-access-token:{token}@github.com/"
-                "triton-ascend/triton-report.git".format(token=token))
+                "cosdt/triton-report.git".format(token=token))
         targets.append("origin")
         # Rebase onto the remote before pushing: the daily data-update bot
         # commits to main between our clone and this submit, so a bare push
